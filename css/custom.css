@@ -1,4 +1,4 @@
-
+/* common style */
 .bg-blue {
     background-color: #03a7f2;
 }
@@ -14,13 +14,12 @@
     background-attachment: fixed;
 }
 
+/* hero section */
+
 .hero img {
     margin-bottom: 40px;
     height: 30px;
-
 }
-
-
 .hero h1 {
     display: inline-block;
     width: 100%;
@@ -43,13 +42,10 @@
 .hero form {
     margin-bottom: 20px;
 }
-
-
 .left-column {
     display: inline-block;
     width: 50%;
     float: left;
-
 }
 .right-column {
     display: inline-block;
@@ -57,12 +53,13 @@
     float: right;
 }
 
+/* main section*/
+
 main h2 {
     display: inline-block;
     width: 100%;
     margin-bottom: 20px ;
     text-transform: uppercase;
-
 }
 main p {
     display: inline-block;
@@ -77,15 +74,39 @@ main p > a {
 main p > a:hover {
     text-decoration: underline;
 }
-
 @media (max-width: 900px) {
     .left-column {
         width: 100%;
         margin-bottom: 60px;
-    
     }
     .right-column {
         width: 100%;
     }
+}
 
+/* footer section */
+
+footer img {
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 30px;
+}
+footer .bottom-texts {
+    display: inline-block;
+    width: 100%;
+    color: #fff9;
+}
+footer p {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 30px;
+}
+footer .description {
+    display: inline-block;
+    width: 100%;
+    color: #fff9;
+    line-height: 30px;
+}
+footer p > a {
+    color: #fff;
 }
