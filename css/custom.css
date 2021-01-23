@@ -86,6 +86,33 @@ main p > a:hover {
 
 /* footer section */
 
+footer.container {
+  padding-top: 0;
+}
+
+footer.container .socials {
+  padding: 20px;
+  text-align: center;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 30px;
+}
+footer.container .socials > a {
+  display: inline-block;
+  width: 36px;
+  margin: 0 3px;
+  height: 36px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+footer.container .socials > a:hover {
+  background-color: #fff;
+  color: #03a7f2;
+}
+
 footer img {
   display: inline-block;
   height: 40px;
