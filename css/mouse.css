@@ -1,0 +1,44 @@
+.mouse {
+  display: inline-block;
+  width: 160px;
+  height: 260px;
+  border: 20px solid #fff;
+  border-radius: 80px;
+}
+.mouse > .wheel {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff0;
+  margin-top: 50px;
+  animation-name: mouseMove;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mouseMove {
+  0% {
+    background-color: #fff0;
+    height: 20px;
+    margin-top: 50px;
+  }
+  15% {
+    background-color: #fff;
+    height: 40px;
+  }
+  50% {
+    background-color: #fff0;
+    margin-top: 180px;
+    height: 10px;
+  }
+  75% {
+    background-color: #fff8;
+    height: 40px;
+    margin-top: 40px;
+  }
+  100% {
+    background-color: #fff0;
+    height: 20px;
+    margin-top: 40px;
+  }
+}
