@@ -1,6 +1,6 @@
 /* common style */
-.bg-blue {
-  background-color: #03a7f2;
+.bg-main-color {
+  background-color: var(--main-color);
 }
 
 .row-short {
@@ -68,7 +68,7 @@ main p {
   color: #777;
 }
 main p > a {
-  color: #e71e62;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 main p > a:hover {
@@ -110,7 +110,7 @@ footer.container .socials > a {
 }
 footer.container .socials > a:hover {
   background-color: #fff;
-  color: #03a7f2;
+  color: var(--main-color);
 }
 
 footer img {
