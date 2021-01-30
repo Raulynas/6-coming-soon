@@ -14,7 +14,11 @@ function renderProgressBars(selector, data) {
             <div class="value">${item.value}%</div>
         </div>
         <div class = "bottom">
-            <div class = "progress" style = "width: ${item.value}%" ></div>
+            <div class = "progress" style = "width: ${item.value}%" >
+              <div class= "loading"></div>
+            
+            </div>
+            
         </div>
     </div>`;
   }
