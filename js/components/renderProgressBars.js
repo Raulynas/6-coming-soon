@@ -19,7 +19,6 @@ function renderProgressBars(selector, data) {
     console.error("ERROR: Element not found");
     return false;
   }
-  console.log(DOM);
   let HTML = "";
   for (let i = 0; i < data.length; i++) {
     const item = data[i];
