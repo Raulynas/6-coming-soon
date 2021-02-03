@@ -24,11 +24,26 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 20px;
-
   text-transform: uppercase;
   font-size: 54px;
   line-height: 60px;
 }
+
+.mainTitle1 {
+  display: inline-block;
+  float: left;
+  text-align: right;
+  width: 50%;
+}
+.mainTitle2 {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  width: 50%;
+  width: 45%;
+  margin-left: 5%;
+}
+
 .hero p {
   display: inline-block;
   width: 100%;
@@ -160,5 +175,16 @@ footer p > a {
   }
   footer .bottom-texts > p::before {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .mainTitle1 {
+    width: 100%;
+    text-align: center;
+  }
+  .mainTitle2 {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
   }
 }
