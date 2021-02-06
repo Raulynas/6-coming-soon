@@ -34,7 +34,17 @@
           dolorem nemo!
         </p>
         <div class="clock">CLOCK</div>
-        <form>SUBSCRIBE FORM</form>
+        <form class="form single-column">
+          <label for="subscribe-email">Type your email</label>
+          <input
+            id="subscribe-email"
+            type="email"
+            placeholder="Type your email"
+            required
+          />
+
+          <button class="btn" type="submit">Subscribe now</button>
+        </form>
         <div class="mouse">
           <div class="wheel"></div>
         </div>
@@ -61,9 +71,20 @@
             consequatur placeat dolorum magni sed reiciendis.
           </p>
           <form class="form">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Message" required></textarea>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Name" required />
+
+            <label for="message-email">Email</label>
+            <input
+              id="message-email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+
+            <label for="message">Name</label>
+            <textarea id="message" placeholder="Message" required></textarea>
+
             <button class="btn" type="submit">Send message</button>
           </form>
         </div>
