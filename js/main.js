@@ -13,3 +13,4 @@ form(".hero .form");
 renderProgressBars(".left-column", progressBarData);
 form(".right-column .form");
 renderSocials("footer > .socials", socialsData);
+
