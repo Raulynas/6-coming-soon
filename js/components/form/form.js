@@ -1,3 +1,5 @@
+import { Validator } from "./Validator.js";
+
 function form(selecotor) {
     const formDOM = document.querySelector(selecotor);
     const allInputsDOM = formDOM.querySelectorAll("input");
@@ -5,28 +7,59 @@ function form(selecotor) {
     const allTextsDOM = [...allInputsDOM, ...allTextareasDOM];
     const submitDOM = formDOM.querySelector('.btn[type="submit"]');
 
+    const validator = new Validator();
+
     submitDOM.addEventListener("click", (event) => {
         event.preventDefault();
+
+        const errors = [];
 
         for (const input of allTextsDOM) {
             const text = input.value;
             const rule = input.dataset.validationRule;
 
+            //short validation option
+
+            // let result = validator.isValidText(text);
+            // if (result !== true) {
+            //     errors.push(result);
+            // }
+
+            //long validation option
+
+            let result = null;
+
             switch (rule) {
                 case "name":
-                    console.log("validation according name rules", text);
+                    result = validator.isValidName(text);
+                    if (result !== true) {
+                        errors.push(result);
+                    }
                     break;
+
                 case "email":
-                    console.log("validation according email rules", text);
+                    result = validator.isValidEmail(text);
+                    if (result !== true) {
+                        errors.push(result);
+                    }
                     break;
+
                 case "text":
-                    console.log("validation according text rules", text);
+                    result = validator.isValidText(text);
+                    if (result !== true) {
+                        errors.push(result);
+                    }
                     break;
 
                 default:
-                    console.log("unknown validation rule:", text);
+                    console.log("unknown validation rule:", rule);
                     break;
             }
+        }
+        if (errors.length) {
+            console.log(errors);
+        } else {
+            console.log("SUCCSESS: visi laukai validus!");
         }
     });
 }
